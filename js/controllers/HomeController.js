@@ -1,8 +1,5 @@
-app.controller('HomeController', [
-	'$scope',
-	'suggestions',
+app.controller('HomeController', ['$scope','suggestions', function($scope, suggestions) {
 
-	function($scope, suggestions) {
 	$scope.posts = suggestions.posts;
 
 	$scope.addSuggestion = function() {
@@ -17,5 +14,10 @@ app.controller('HomeController', [
 		});
 		//after submit, clear input
 		$scope.title = " ";
-	};
+	}
+
+	$scope.upVote = function(post) {
+		post.upvotes+=1;
+	}
+
 }]);
