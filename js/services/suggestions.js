@@ -2,22 +2,22 @@ app.factory('suggestions', [function(){
 	var demoSuggestions = {
 		posts: [
 		{
-			title: 'Free pizza at club meetings',
+			title: 'Life Insurance',
 			upvotes: 15,
 			comments: [],
 		},
 		{
-			title: 'End all club emails with Laffy Taffy jokes',
+			title: 'Renter\'s Insurance',
 			upvotes: 9,
 			comments: [],	
 		},
 		{
-			title: 'Retrofit water formula with Gatorade',
+			title: 'Pet Insurance',
 			upvotes: 7,
 			comments: [],
 		},
 		{
-			title: 'Sing Bon Jovi\'s "Living on a Prayer" halfway through meetings',
+			title: 'Metrocard Insurance',
 			upvotes: 3,
 			comments: [],
 		},
