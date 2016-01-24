@@ -23,5 +23,4 @@ app.controller('SuggestionController', [
 		comment.upvotes+=1;
 	};
 
-
 }]);

@@ -1,22 +1,45 @@
-<h1 class="headline">Suggestion Box</h1>
-
 <div class="main" ng-controller="HomeController">
-	<div class="container">
-		<div class="post" ng-repeat="post in posts | orderBy: '-upvotes'">
-			<h2 class="title">{{post.title}}</h2>
-			<p>
-
-			<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span> Upvotes: {{post.upvotes}}
-			</p>
-			<a href="#/suggestion/{{$index}}">Comments</a>
-		</div>
-	</div>
-
-	<form ng-submit="addSuggestion()" style="margin-top: 50px">
-		<h3>Submit Your Suggestion For Your Favorite Kind of Insurance</h3>
-			<div class="form-group">
-			<input type="text" class="form-control" placeholder="Great ideas here" ng-model="title"></input>
+		<div class="row">
+				<div class="post" ng-repeat="post in posts | orderBy: '-upvotes'">
+					<h2 class="title">{{post.title}}</h2>
+					<p>
+					<span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span> Upvotes: {{post.upvotes}} | 
+					<a href="#/suggestion/{{$index}}">Comments</a>
+					</p>
 			</div>
+		</div>
+</div>
+
+<div class="supporting">
+		<div class="row">
+			<form ng-submit="addSuggestion()" style="margin-top: 50px">
+			<h3>Suggest Your Favorite Insurance</h3>
+		
+			<div class="form-group">
+				<input type="text" class="form-control" placeholder="Ideas here" ng-model="title"></input>
+			</div>
+			
 			<button type="submit" class="btn btn-primary">Suggest</button>
-	</form>
+			</form>
+		</div>
+</div>
+
+<div class="footer">
+	<div class="row">
+		<div class="col">
+			<h3>About</h3>
+				<ul>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Twitter</a></li>
+				</ul>
+		</div>
+
+		<div class="col">
+			<h3>Careers</h3>
+				<ul>
+					<li><a href="https://github.com/correa-brian">GitHub</a></li>
+					<li><a href="https://www.linkedin.com/in/brcorrea">LinkedIn</a></li>
+				</ul>
+		</div>
+</div>
 </div>

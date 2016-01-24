@@ -4,15 +4,29 @@
 		<title>Suggestion Box</title>
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
 css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/styles.css" rel="stylesheet">
 		<script type="text/javascript" src="js/vendor/angular.min.js"></script>
 		<script type="text/javascript" src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script>
 	</head>
 		<body ng-app="SuggestionBox" ng-controller="HomeController">
+			
 			<div class="header">
 				<div class="container">
-					<div ng-view></div>
+					<div class="row">
+						<div class="col">
+							<img src="http://www.clker.com/cliparts/a/H/8/Z/F/1/white-thought-bubble.svg" width="106" length="75">
+						</div>
+						<div class="col">
+							<h1 class="headline"><a href="#/home/">Suggestion Box</a></h1>
+						</div>
+					</div>
 				</div>
+			</div>
+
+			<div class="jumbotron">
+				<div ng-view></div>
 			</div>
 			
 	<!-- Modules -->
